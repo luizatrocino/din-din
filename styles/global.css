@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;  
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: #2E948A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1%;
+    width:100%;
+}
+
+.container-logo{
+    width:20%;
+    margin-left:3%;
+}
+
+.menu{
+    list-style: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 20%;
+    display:flex;
+    justify-content: flex-end;
+    gap:50%;
+}
+
+
+footer{
+    background-color: #2E948A; 
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:20%;
+    align-items: center;
+    padding:3% 0;
+    
+}
+
+.container-logo-footer{
+    width:20%;
+    margin-left: -3%;
+    
+}
+
+.menu-f{
+    list-style: none;
+    color:white;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:4px;
+    width:20%;
+}
+
+.saida-rodape{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:13px;
+    width:20%;
+}
+
+#rodape-um{
+    color:white;
+    text-decoration: none;
+    padding:3% 20%;
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+#rodape-dois{
+    color:white;
+    text-decoration: none;
+    padding:3% 13.5%;
+    border: solid white 1px;
+    border-radius: 20px;
+}
