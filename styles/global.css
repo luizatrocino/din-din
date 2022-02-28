@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;  
     margin:0;
     padding:0;
-
+    color:#555555;
 }
 
 header{
@@ -21,6 +21,11 @@ header{
     margin-left:3%;
 }
 
+.menu-itens-link{
+    text-decoration: none;
+    color:white;
+}
+
 .menu{
     list-style: none;
     color:white;
@@ -31,6 +36,7 @@ header{
     justify-content: flex-end;
     gap:50%;
 }
+
 
 
 main{
@@ -221,6 +227,11 @@ footer{
     
 }
 
+.menu-itens-f-link{
+    text-decoration: none;
+    color: white;
+}
+
 .menu-f{
     list-style: none;
     color:white;
@@ -231,6 +242,7 @@ footer{
     gap:4px;
     width:20%;
 }
+
 
 .saida-rodape{
     display:flex;
