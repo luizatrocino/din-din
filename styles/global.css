@@ -197,7 +197,7 @@ main{
     display: block;
     margin:0 auto;
     text-align: center;
-    width: 18%;
+    width: 20%;
     border: solid 1px #FF4081;
     border-radius: 40px;
     padding: 0.5% 3%;
@@ -259,7 +259,7 @@ footer{
 
 
 
-@media (max-width:480px){
+@media only screen and (max-width:480px){
 
     header{
         display: flex;
@@ -378,6 +378,10 @@ footer{
         width:50%;
     }
 
+    .conteudo-img{
+        width:92%;
+    }
+
     footer{
         flex-direction: column;
     }
@@ -414,7 +418,7 @@ footer{
 
 }
 
-@media (min-width: 481px) and (max-width: 1024px){
+@media only screen and  (min-width: 481px) and (max-width: 1024px){
 
     .foto-principal{
         display:none;
@@ -426,7 +430,6 @@ footer{
         width:30%;
     }
 
-    
 
     header{
         flex-direction: column;
@@ -465,6 +468,7 @@ footer{
 
     .saida-rodape{
         width:30%;
+        font-size:15px;
     }
 
     .container-logo-footer{
