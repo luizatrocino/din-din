@@ -4,6 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;  
     margin:0;
     padding:0;
+
 }
 
 header{
@@ -34,6 +35,7 @@ header{
 
 main{
     width:100%;
+    max-width: 1440px;
 }
 
 .parte-um{
@@ -75,7 +77,6 @@ main{
     justify-content: space-around;
     padding:6%;
     margin-top:60px;
-    gap:%;
 }
 
 .foto-curso-um,.foto-curso-dois{
@@ -97,6 +98,7 @@ main{
 .titulo-curso{
     color:#FF4081;
     font-size:25px;
+    text-align: center;
 }
 
 .subtitulo-curso{
@@ -116,7 +118,90 @@ main{
 }
 
 
+.titulo-depo{
+    color:#009688;
+    font-size: 27px;
+    margin:0;
+    padding: 5% 0 2% 8%;
+   
+}
 
+.grupo-depo{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 7%;
+    margin-left: 2%;
+}
+
+.depoimentos{
+    width: 40%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+    padding: 3.5% 5% 1% 0;
+}
+
+.depo,.nome-depo{
+    font-size:18px;
+    margin:0;
+}
+
+.nome-depo{
+    margin-top: 15px;
+}
+
+.texto-depo{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-quatro{
+    background-color: #F6F6F6;
+    padding: 0 0 7% 0;
+}
+
+.container-conteudo{
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0 0 3%;
+    flex-wrap: wrap;
+}
+
+.conteudo-extra{
+    margin-bottom: 10%;
+}
+
+.titulo-extra{
+    color:#009688;
+    font-size: 22px;
+    font-weight: 700;
+    margin:0;
+    margin-top: 3%;
+}
+
+.texto-extra{
+    margin:0;
+    font-size: 18px;
+}
+
+
+.botao-extra{
+    color:#FF4081;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    width: 18%;
+    border: solid 1px #FF4081;
+    border-radius: 40px;
+    padding: 0.5% 3%;
+}
 
 
 footer{
@@ -172,3 +257,224 @@ footer{
     border-radius: 20px;
 }
 
+
+
+@media (max-width:480px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .container-logo{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+        width:80%;
+    }
+
+    .menu{
+        justify-content: center;
+        width:100%;
+        margin:0;
+        padding: 4% 0;
+        gap:5%;
+        font-size: 15px;
+    }
+
+    .foto-principal{
+        display:none;
+    }
+
+    .titulo-pagina{
+        font-size: 40px;
+    }
+
+    .subtitulo-pagina{
+        font-size: 20px;
+    }
+
+    .botao-principal{
+        font-size: 15px;
+    }
+
+    .parte-dois{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10% 0;
+    }
+
+    .cursos{
+        margin-bottom:10%;
+    }
+
+    .subtitulo-curso, .titulo-curso{
+        text-align: center;
+        width:92%;
+    }
+
+    .botao-curso{
+        font-size: 15px;
+        padding: 2% 5%;
+    }
+
+
+    .titulo-depo{
+        font-size: 30px;
+        width:80%;
+    }
+
+    .grupo-depo{
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-wrap: nowrap;
+        width:100%;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .depoimentos{
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+        padding: 10% 2%;
+    }
+
+    .foto-depo{
+        display: block;
+        margin:0 auto;
+        text-align: center;
+    }
+
+    .texto-depo{
+        display: block;
+        margin:0 auto;
+        text-align: center;
+        width:92%;
+
+    }
+
+    .container-conteudo{
+        flex-direction: column;
+        justify-content: center;
+        width:92%;
+        padding: 10% 4%;
+    }
+
+    .conteudo-extra{
+        display: block;
+        margin:0 auto;
+        text-align: center;
+        margin-bottom: 5%;
+        width:92%;
+    }
+
+    .botao-extra{
+        font-size:20px;
+        width:50%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .container-logo-footer{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+        width:100%;
+    }
+
+    .nav-footer{
+        width:100%
+    }
+
+    .menu-f{
+        flex-direction: row;
+        margin:0;
+        padding:0;
+        justify-content: center;
+        width:100%;
+        gap: 3%;
+        padding: 4% 0;
+    }
+
+    .saida-rodape{
+        width:70%;
+    }
+
+    .rodape-um,.rodape-dois{
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px){
+
+    .foto-principal{
+        display:none;
+    }
+
+
+    .botao-extra{
+        font-size:20px;
+        width:30%;
+    }
+
+    
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-logo{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+        width:80%;
+    }
+
+    .menu{
+        justify-content: center;
+        width:100%;
+        margin:0;
+        padding: 4% 0;
+        gap:10%;
+        font-size: 20px;
+    }
+
+    .titulo-extra,.texto-extra{
+        width:92%;        
+    }
+
+    .subtitulo-curso, .titulo-curso{
+        text-align: center;
+        width:92%;
+    }
+
+    footer{
+        gap:10px;
+        justify-content: space-between;
+    }
+
+    .saida-rodape{
+        width:30%;
+    }
+
+    .container-logo-footer{
+        width:35%;
+        margin:0;
+        padding: 0 0 0 2%;
+    }
+
+    .menu-f{
+        width:20%
+    }
+
+} 
