@@ -38,73 +38,80 @@ header{
 }
 
 
-main{
-    margin-bottom:15%;
-    width:100%;
-}
-
-#titulo-pagina{
-    font-size: 60px;
-    color:#FF4081;
-    font-weight: 700;
-    margin:0;
-    padding:0;
-    margin-top:5%;
-    margin-left:5%;
-}
-
-#subtitulo-pagina{
-    font-size:20px;
-    font-weight: 400;
-    margin:0;
-    padding:0;
-    margin-left:5%;
-    margin-bottom: 7%;
-}
-
-.lista-cursos{
-    display:flex;
-    flex-direction: column;
-    margin-left:5%;
-    gap:50px;
-}
-
 .curso{
-    display: flex;
-    gap:5%;
-    width:95%;
+    display:flex;
     align-items: flex-start;
+    margin-left: 15%;
+    margin-top:2%;
+    margin-bottom: 5%;
 }
 
 .curso-titulo{
-    font-size: 35px;
-    font-weight: 700;
     color:#FF4081;
-    margin-bottom:6%;
+    font-size: 55px;
+    font-weight: 700;
+    width: 95%;
+    margin-bottom:0;
 }
 
 .curso-exp{
-    font-size:17px;
+    font-size:20px;
     font-weight: 300;
-    margin-bottom:10%;
+    margin-top:5%;
 }
 
-.curso-botao{
-    background-color:  #419488;
-    border-radius: 40px;
-    text-decoration: none;
-    color:white;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 1.2% 4.5%;
+.curso-texto{
+    width:46%;
+}
+
+.curso-img{
+    margin-left:8%;
+    margin-top:3%;
+}
+
+
+.videos{
+    background-color: #F6F6F6;
+    display:flex;
+    flex-direction: column;
+}
+
+.video-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-top:5%;
+    margin-bottom:4%;
+}
+
+.video-titulo{
+    color:#FF4081;
+    font-size: 35px;
+}
+
+.video-exp{
+    font-size:20px;
+}
+
+.video-texto{
+    width:40%;
+    margin:0;
+    margin-left: 5%;
+}
+
+.video-img{
+    margin-top:3%;
 }
 
 hr{
     border:0;
     border-top: solid 5px #C4C4C4;
-    width: 95%;
-    margin:0
+    width: 90%;
+    margin:0;
+    margin-left: 5%;
 }
+
 
 footer{
     background-color: #2E948A; 
@@ -192,58 +199,60 @@ footer{
     }
 
 
-    #titulo-pagina{
-        font-size: 40px;
-        width:90%;
-        margin-left:15%;
-    }
-
-    #subtitulo-pagina{
-        margin-bottom: 15%;
-        width:70%;
-        margin-left:15%;
-    }
-
-    .curso-titulo{
-        font-size: 25px;
-    }
-
     .curso{
-        flex-direction: column;
+        margin-bottom: 20%;
     }
 
     .curso-img{
-        max-width:80%;
-        max-height: 80%;
-    }
-
-    .img-c{
-        max-width:100%;
-        max-height: 100%;
-        margin-left: 10%;    
+        display: none;
     }
 
     .curso-texto{
-        display:block;
-        margin: 0 auto;
+        width:95%;
+        margin:0;
+        padding:0;
         text-align: center;
-        width:90%;
+        margin-left:-2.5%;
     }
 
+    .curso-titulo{
+        font-size: 35px;
+    }
+
+    .videos{
+        padding:20% 0 0 0;
+    }
+
+    .video-item{
+        flex-direction: column;
+        gap:10%;
+    }
+
+    .video-texto{
+        width:90%;
+        text-align: center;
+    }
+
+    .video-img{
+        max-width:90%;
+    }
+
+    .img-vi{
+        max-width:100%;
+        margin-left: 5%;
+    }
 
     footer{
         flex-direction: column;
         margin-top:40%;
-        width:100%;
     }
 
     .container-logo-footer{
-        width:100%;
         display:block;
         margin: 0 auto;
         text-align: center;
+        width:100%;
     }
-    
 
     .nav-footer{
         width:100%
@@ -268,8 +277,8 @@ footer{
         text-align: center;
     }
 
-}
 
+}
 
 
 @media only screen and  (min-width: 481px) and (max-width: 1024px){
@@ -294,6 +303,50 @@ footer{
         gap:10%;
         font-size: 20px;
     }
+
+
+    .curso-titulo{
+        font-size:40px;
+    }
+
+    .curso-texto{
+        margin:none;
+        width:40%;
+        margin-left:-8%;
+        margin-top:2%;
+    }
+    
+    .curso-img{
+        margin-top: 5%;
+    }
+
+    .curso-exp{
+        font-size:16px;
+    }
+
+
+    .videos{
+        padding:10% 0 10% 0;
+        justify-content: center;
+
+    }
+
+    .video-item{
+        flex-direction: column;
+        gap:10%;
+    }
+
+    .video-texto{
+        width:90%;
+        text-align: center;
+    }
+
+    .video-img{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
 
     footer{
         gap:10px;
