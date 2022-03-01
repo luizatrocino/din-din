@@ -40,79 +40,49 @@ header{
 
 
 
-.curso{
+main{
     display:flex;
-    align-items: flex-start;
-    margin-left: 15%;
-    margin-top:2%;
-    margin-bottom: 5%;
+    justify-content: space-around;
+    padding: 6% 0;
 }
 
-.curso-titulo{
-    color:#FF4081;
-    font-size: 55px;
-    font-weight: 700;
-    width: 95%;
-    margin-bottom:0;
+.container-form{
+    width:30%;  
 }
 
-.curso-exp{
-    font-size:20px;
-    font-weight: 300;
-    margin-top:5%;
-}
-
-.curso-texto{
-    width:46%;
-}
-
-.curso-img{
-    margin-left:8%;
-    margin-top:3%;
-}
-
-
-.videos{
-    background-color: #F6F6F6;
+.dados-form{
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
+    margin-bottom: 4%;
 }
 
-.video-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2%;
-    margin-top:5%;
-    margin-bottom:4%;
+.form-item{
+    margin-bottom:3%;
+    border-radius: 7px;
+    border: solid 1px #686868;
+    padding:2% 6%;
+    font-family:'Montserrat', sans-serif;
 }
 
-.video-titulo{
-    color:#FF4081;
-    font-size: 35px;
+.titulo-form{
+    color: #FF4081;
+    font-size: 40px;
 }
 
-.video-exp{
-    font-size:20px;
+.botao-form{
+    background-color: #FF4081;
+    color:white;
+    font-size:16px;
+    font-weight: 800;
+    border-radius: 30px;
+    padding:2% 8%;
 }
 
-.video-texto{
-    width:40%;
-    margin:0;
-    margin-left: 5%;
+.form-item::placeholder{
+    font-family: 'Montserrat', sans-serif;  
+    padding:2% 0 2% 6%;
 }
 
-.video-img{
-    margin-top:3%;
-}
-
-hr{
-    border:0;
-    border-top: solid 5px #C4C4C4;
-    width: 90%;
-    margin:0;
-    margin-left: 5%;
-}
 
 
 footer{
@@ -201,47 +171,12 @@ footer{
     }
 
 
-    .curso{
-        margin-bottom: 20%;
+    .container-imagem{
+        display:none;
     }
 
-    .curso-img{
-        display: none;
-    }
-
-    .curso-texto{
-        width:95%;
-        margin:0;
-        padding:0;
-        text-align: center;
-        margin-left:-2.5%;
-    }
-
-    .curso-titulo{
-        font-size: 35px;
-    }
-
-    .videos{
-        padding:20% 0 0 0;
-    }
-
-    .video-item{
-        flex-direction: column;
-        gap:10%;
-    }
-
-    .video-texto{
-        width:90%;
-        text-align: center;
-    }
-
-    .video-img{
-        max-width:90%;
-    }
-
-    .img-vi{
-        max-width:100%;
-        margin-left: 5%;
+    .container-form{
+        width:80%
     }
 
 
@@ -280,7 +215,6 @@ footer{
         text-align: center;
     }
 
-
 }
 
 
@@ -289,6 +223,7 @@ footer{
     header{
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 15%;
     }
 
     .container-logo{
@@ -307,51 +242,33 @@ footer{
         font-size: 20px;
     }
 
-
-    .curso-titulo{
-        font-size:40px;
+    main{
+        margin-left:5%;
     }
 
-    .curso-texto{
-        margin:none;
-        width:40%;
-        margin-left:-8%;
-        margin-top:2%;
-    }
-    
-    .curso-img{
-        margin-top: 5%;
+    .titulo-form{
+        margin:0;
+        margin-bottom:5%;
     }
 
-    .curso-exp{
-        font-size:16px;
+    .container-form{
+        width:40%; 
+        margin:0; 
     }
 
-
-    .videos{
-        padding:10% 0 10% 0;
-        justify-content: center;
-
+    .container-imagem{
+        width:50%;
+        margin:0; 
+        margin-left:5%;
     }
 
-    .video-item{
-        flex-direction: column;
-        gap:10%;
-    }
-
-    .video-texto{
-        width:90%;
-        text-align: center;
-    }
-
-    .video-img{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
+    .img-form{
+        max-width:80%;
     }
 
 
     footer{
+        margin-top:15%;
         gap:10px;
         justify-content: space-between;
     }
