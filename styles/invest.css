@@ -235,15 +235,16 @@ footer{
     .video-texto{
         width:90%;
         text-align: center;
+        margin:0;
     }
 
     .video-img{
-        max-width:90%;
+        width:90%;
     }
 
     .img-vi{
         max-width:100%;
-        margin-left: 5%;
+
     }
 
 
