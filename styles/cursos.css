@@ -43,6 +43,7 @@ header{
 main{
     margin-bottom:15%;
     width:100%;
+    max-width: 1440px;
 }
 
 #titulo-pagina{

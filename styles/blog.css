@@ -39,6 +39,10 @@ header{
 }
 
 
+main{
+    max-width: 1440px;
+}
+
 .container-principal{
     display: flex;
     margin:0;
@@ -75,6 +79,11 @@ header{
     margin-bottom:5%;
 }
 
+.link-post{
+    text-decoration: none;
+    color:#FF4081;
+}
+
 .post-blog{
     width:40%;
     margin-bottom: 5%;
@@ -83,7 +92,6 @@ header{
 .titulo-blog{
     font-size:27px;
     font-weight: 600;
-    color:#FF4081;
 }
 
 .exp-blog{

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body{
     font-family: 'Montserrat', sans-serif;  
@@ -38,51 +38,119 @@ header{
     margin-right:-10%;
 }
 
-
-
 main{
-    display:flex;
+    max-width: 1440px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15% 10% 15%;
+
+}
+
+#titulo-pagina,#subtitulo-pagina,#foto-post{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.foto{
+    max-width: 100%;
+    margin-bottom: 6%;
+}
+
+#titulo-pagina{
+    font-size:50px;
+    color:#FF4081;
+    margin:0;
+    padding:0;
+    margin-top:10%;
+}
+
+#subtitulo-pagina{
+    color:#9D9D9D;
+    font-size:18px;
+    margin:0;
+    padding:0;
+    font-weight: 300;
+    margin-bottom: 8%;
+}
+
+.texto-pagina{
+    font-size: 20px;
+    margin:0;
+    padding: 0;
+    margin-bottom: 2%;  
+}
+
+.subtitulo-post{
+    font-size:26px;
+    color:#2E948A;
+    margin:0;
+    padding: 0;
+    margin-bottom: 2.5%; 
+    margin-top:6%;
+}
+
+
+aside{
+    background-color: #F6F6F6;
+}
+
+#titulo-aside{
+    color:#FF4081;
+    font-size:50px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4% 0 0 0;
+    line-height: 57,45px;
+}
+
+#aside-conteudo{
+    display: flex;
     justify-content: space-around;
-    padding: 6% 0;
+    padding:6%;
+   
 }
 
-.container-form{
-    width:30%;  
+.foto-curso-um,.foto-curso-dois{
+    width:50%;
+    margin-bottom: 20px;
 }
 
-.dados-form{
+.foto-curso-tres{
+    width:38.5%;
+    margin-bottom: 20px;
+}
+
+.cursos{
     display:flex;
-    flex-direction:column;
-    margin-bottom: 4%;
+    flex-direction: column;
+    align-items: center;
 }
 
-.form-item{
-    margin-bottom:3%;
-    border-radius: 7px;
-    border: solid 1px #686868;
-    padding:2% 6%;
-    font-family:'Montserrat', sans-serif;
+.titulo-curso{
+    color:#FF4081;
+    font-size:25px;
+    text-align: center;
 }
 
-.titulo-form{
-    color: #FF4081;
-    font-size: 40px;
+.subtitulo-curso{
+    text-align: center;
+    font-size: 17px;
 }
 
-.botao-form{
+.botao-curso{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
     background-color: #FF4081;
-    color:white;
-    font-size:16px;
-    font-weight: 800;
+    border: solid 1px  #FF4081;
     border-radius: 30px;
-    padding:2% 8%;
+    padding:4% 13%;
+    margin-top:15px;
 }
-
-.form-item::placeholder{
-    font-family: 'Montserrat', sans-serif;  
-    padding:2% 0 2% 6%;
-}
-
 
 
 footer{
@@ -170,19 +238,53 @@ footer{
         font-size: 15px;
     }
 
-
-    .container-imagem{
-        display:none;
+    article{
+        padding:2% 5%;
+        margin:0;
+        width:90%;
     }
 
-    .container-form{
-        width:80%
+    #titulo-pagina{
+        font-size: 30px;
+    }
+
+    #subtitulo-pagina{
+        font-size: 15px;
+    }
+
+    .subtitulo-post{
+        font-size:25px;
+    }
+
+    #aside-conteudo{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10% 0;
+    }
+
+    #titulo-aside{
+        font-size:37px;
+        padding: 10% 0;
+        width:90%;
+    }
+
+    .cursos{
+        margin-bottom:10%;
+    }
+
+    .subtitulo-curso, .titulo-curso{
+        text-align: center;
+        width:92%;
+    }
+
+    .botao-curso{
+        font-size: 15px;
+        padding: 2% 5%;
     }
 
 
     footer{
         flex-direction: column;
-        margin-top:40%;
     }
 
     .container-logo-footer{
@@ -223,7 +325,7 @@ footer{
     header{
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 15%;
+        margin-bottom: 7%;
     }
 
     .container-logo{
@@ -241,32 +343,11 @@ footer{
         gap:10%;
         font-size: 20px;
     }
-
-    main{
-        margin-left:5%;
-        max-width: 1440px;
+ 
+    .subtitulo-curso, .titulo-curso{
+        text-align: center;
+        width:92%;
     }
-
-    .titulo-form{
-        margin:0;
-        margin-bottom:5%;
-    }
-
-    .container-form{
-        width:40%; 
-        margin:0; 
-    }
-
-    .container-imagem{
-        width:50%;
-        margin:0; 
-        margin-left:5%;
-    }
-
-    .img-form{
-        max-width:80%;
-    }
-
 
     footer{
         margin-top:15%;
