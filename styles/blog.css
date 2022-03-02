@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;  
+    margin:0;
+    padding:0;
+    color:#555555;
+}
+
+header{
+    background-color: #2E948A;
+    display: flex;
+    gap:50%;
+    align-items: center;
+    padding:1% 0 1% 0;
+    width:100%;
+}
+
+.container-logo{
+    width:20%;
+    margin-left:3%;
+}
+
+.menu-itens-link{
+    text-decoration: none;
+    color:white;
+}
+
+.menu{
+    list-style: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 80%;
+    display:flex;
+    justify-content: flex-end;
+    gap:20%;
+    margin-right:-10%;
+}
+
+
+.container-principal{
+    display: flex;
+    margin:0;
+    padding:0;
+    margin-left: 15%;
+    margin-top:6%;
+    margin-bottom:8%;
+    gap:7%;
+}
+
+.conteudo-titulo{
+    color:#009688;
+    font-size: 47px;
+}
+
+.conteudo-exp{
+    font-size:20px; 
+    font-weight: 300;
+}
+
+.conteudo-texto{
+    width:40%;
+    margin-top:3%;
+}
+
+.container-posts{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    gap:5.5%;
+    margin-bottom:5%;
+}
+
+.post-blog{
+    width:40%;
+    margin-bottom: 5%;
+}
+
+.titulo-blog{
+    font-size:27px;
+    font-weight: 600;
+    color:#FF4081;
+}
+
+.exp-blog{
+    font-size:15px;
+}
+
+footer{
+    background-color: #2E948A; 
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:20%;
+    align-items: center;
+    padding:3% 0;
+    
+}
+
+.container-logo-footer{
+    width:20%;
+    margin-left: -3%;
+    
+}
+
+.menu-itens-f-link{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-f{
+    list-style: none;
+    color:white;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:4px;
+    width:20%;
+}
+
+.saida-rodape{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:13px;
+    width:20%;
+}
+
+#rodape-um{
+    color:white;
+    text-decoration: none;
+    padding:3% 20%;
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+#rodape-dois{
+    color:white;
+    text-decoration: none;
+    padding:3% 13.5%;
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+
+
+@media only screen and (max-width:480px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .container-logo{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+        width:80%;
+    }
+
+    .menu{
+        justify-content: center;
+        width:100%;
+        margin:0;
+        padding: 4% 0;
+        gap:5%;
+        font-size: 15px;
+    }
+
+
+    .conteudo-img{
+        display:none;
+    }
+
+    .conteudo-texto{
+        width:90%;
+    }
+
+    .conteudo-titulo{
+        font-size:40px;
+    }
+
+    .container-posts{
+        flex-direction: column;
+        margin-top:20%;
+    }
+
+    .post-blog{
+        width:90%;
+        display: block;
+        text-align: center;
+        margin:5% auto;
+    }
+
+   .rec-blog{
+       max-width: 100%;
+   }
+
+
+
+    footer{
+        flex-direction: column;
+        margin-top:40%;
+    }
+
+    .container-logo-footer{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+        width:100%;
+    }
+
+    .nav-footer{
+        width:100%
+    }
+
+    .menu-f{
+        flex-direction: row;
+        margin:0;
+        padding:0;
+        justify-content: center;
+        width:100%;
+        gap: 3%;
+        padding: 4% 0;
+    }
+
+    .saida-rodape{
+        width:70%;
+    }
+
+    .rodape-um,.rodape-dois{
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and  (min-width: 481px) and (max-width: 1024px){
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 7%;
+    }
+
+    .container-logo{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+        width:80%;
+    }
+
+    .menu{
+        justify-content: center;
+        width:100%;
+        margin:0;
+        padding: 4% 0;
+        gap:10%;
+        font-size: 20px;
+    }
+ 
+    .conteudo-titulo{
+        font-size:40px;
+    }
+
+    .img-principal{
+        max-width:100%;
+    }
+    
+    .conteudo-img{
+        margin-top:5%;
+    }
+
+    .conteudo-texto{
+        width:40%;
+    }
+
+    .container-principal{
+        margin:0;
+        padding:0;
+        margin-left: 10%;
+        gap:7%;
+        margin-bottom:8%;
+    }
+
+
+    .rec-blog{
+        max-width: 100%;
+    }
+
+    footer{
+        margin-top:15%;
+        gap:10px;
+        justify-content: space-between;
+    }
+
+    .saida-rodape{
+        width:30%;
+        font-size:15px;
+    }
+
+    .container-logo-footer{
+        width:35%;
+        margin:0;
+        padding: 0 0 0 2%;
+    }
+
+    .menu-f{
+        width:20%
+    }
+
+}
