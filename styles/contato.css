@@ -14,6 +14,7 @@ header{
     align-items: center;
     padding:1% 0 1% 0;
     width:100%;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
 }
 
 .container-logo{
@@ -24,6 +25,11 @@ header{
 .menu-itens-link{
     text-decoration: none;
     color:white;
+    transition:300ms;
+}
+
+.menu-itens-link:hover{
+    font-size:23px;
 }
 
 .menu{
@@ -70,12 +76,21 @@ main{
 }
 
 .botao-form{
+    text-decoration: none;
     background-color: #FF4081;
     color:white;
     font-size:16px;
     font-weight: 800;
     border-radius: 30px;
     padding:2% 8%;
+    transition: 300ms;
+}
+
+.botao-form:hover{
+    color:#FF4081;
+    background-color: white;
+    border: solid 1px #FF4081;
+    font-size:17px;
 }
 
 .form-item::placeholder{

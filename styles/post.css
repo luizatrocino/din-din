@@ -14,6 +14,7 @@ header{
     align-items: center;
     padding:1% 0 1% 0;
     width:100%;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
 }
 
 .container-logo{
@@ -24,6 +25,11 @@ header{
 .menu-itens-link{
     text-decoration: none;
     color:white;
+    transition: 300ms;
+}
+
+.menu-itens-link:hover{
+    font-size:23px;
 }
 
 .menu{
@@ -111,6 +117,7 @@ aside{
     display: flex;
     justify-content: space-around;
     padding:6%;
+    flex-wrap: wrap;
    
 }
 
@@ -128,12 +135,26 @@ aside{
     display:flex;
     flex-direction: column;
     align-items: center;
+    min-width:290px;  
 }
 
-.titulo-curso{
+.titulo-curso-um, .titulo-curso-dois, .titulo-curso-tres{
     color:#FF4081;
     font-size:25px;
     text-align: center;
+}
+
+.titulo-curso-um{
+    margin: 20.750px 0;
+}
+
+.titulo-curso-dois{
+    margin: 20.750px 35px;
+}
+
+.titulo-curso-tres{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .subtitulo-curso{
@@ -150,6 +171,15 @@ aside{
     border-radius: 30px;
     padding:4% 13%;
     margin-top:15px;
+    margin-bottom: 20%;
+    transition:300ms;
+}
+
+.botao-curso:hover{
+    color:#FF4081;
+    background-color: white;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 
@@ -270,6 +300,7 @@ footer{
 
     .cursos{
         margin-bottom:10%;
+        min-width: 0;   
     }
 
     .subtitulo-curso, .titulo-curso{
@@ -349,8 +380,11 @@ footer{
         width:92%;
     }
 
+    .cursos{
+        min-width: 0;  
+    }
+
     footer{
-        margin-top:15%;
         gap:10px;
         justify-content: space-between;
     }
