@@ -99,7 +99,6 @@ main{
 }
 
 
-
 footer{
     background-color: #2E948A; 
     width:100%;
@@ -148,6 +147,7 @@ footer{
     padding:3% 20%;
     border: solid white 1px;
     border-radius: 20px;
+    transition: 300ms;
 }
 
 #rodape-dois{
@@ -156,6 +156,19 @@ footer{
     padding:3% 13.5%;
     border: solid white 1px;
     border-radius: 20px;
+    transition: 300ms;
+}
+
+#rodape-um:hover{
+    color:#2E948A;
+    background-color: white;
+    font-weight: 600;
+}
+
+#rodape-dois:hover{
+    color:#2E948A;
+    background-color: white;
+    font-weight: 600;
 }
 
 
